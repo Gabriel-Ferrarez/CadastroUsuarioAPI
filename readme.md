@@ -72,13 +72,12 @@ A estrutura do projeto é organizada em duas partes principais:
 # Executando o Projeto
 
 1. Iniciar o Back-end: Navegue até a pasta backend/API e inicie o servidor:
-    
     `npm start`
 
    O servidor estará disponível em http://localhost:3000.
 
 
- 2. Iniciar o Front-end: Navegue até a pasta frontend/cadastro e inicie o front-end:
+2. Iniciar o Front-end: Navegue até a pasta frontend/cadastro e inicie o front-end:
     `npm start`
 
    O front-end estará disponível em http://localhost:3000.
