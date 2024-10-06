@@ -57,19 +57,19 @@ A estrutura do projeto é organizada em duas partes principais:
  Configuração de Variáveis de Ambiente
  Crie um arquivo .env nas pastas frontend/cadastro e backend/API com as seguintes configurações:
 
-# Backend .env (exemplo):
+## Backend .env (exemplo):
     
     `DATABASE_URL=mongodb://localhost:27017/nome-do-banco
      JWT_SECRET=sua_chave_secreta
      PORT=3000`
 
 
-# Frontend .env (exemplo):
+## Frontend .env (exemplo):
 
    `REACT_APP_API_URL=http://localhost:3000`
 
 
-# Executando o Projeto
+## Executando o Projeto
 
 1. Iniciar o Back-end: Navegue até a pasta backend/API e inicie o servidor:
     `npm start`
@@ -90,13 +90,13 @@ A estrutura do projeto é organizada em duas partes principais:
  - Consumo da API: A aplicação React consome os dados da API para exibir e gerenciar os usuários cadastrados.
  - Autenticação (opcional): A API pode incluir autenticação com JWT (se configurado).
 
- ## Melhorias Futuras
+## Melhorias Futuras
  - Implementar autenticação de usuários (login/logout) usando JWT.
  - Adicionar validações de formulário no front-end.
  - Melhorar o design da interface com frameworks como Material-UI ou Bootstrap.
  - Adicionar testes unitários e de integração.
 
- ## Contribuição
+## Contribuição
  - Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 
