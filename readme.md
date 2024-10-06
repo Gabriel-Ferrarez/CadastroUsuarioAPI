@@ -38,70 +38,66 @@ A estrutura do projeto é organizada em duas partes principais:
 ### Passo a Passo:
 
 1. Clone o repositório:
-   ```bash
+   ```
    git clone https://github.com/seu-usuario/CadastroUsuarioAPI.git
 
-Frontend: Navegue até a pasta do front-end e instale as dependências:
+2. Frontend: Navegue até a pasta do front-end e instale as dependências:
+    ```
+    cd frontend/cadastro
+    npm install
+   
+3. Backend: Navegue até a pasta do back-end e instale as dependências:
+    ```
+    cd ../../backend/API
+    npm install
 
-bash
-Copiar código
-cd frontend/cadastro
-npm install
-Backend: Navegue até a pasta do back-end e instale as dependências:
 
-bash
-Copiar código
-cd ../../backend/API
-npm install
-Configuração do Banco de Dados: Certifique-se de que o MongoDB esteja rodando localmente ou tenha uma conexão remota. Configure as variáveis de ambiente no arquivo .env (exemplo abaixo).
+4. Configuração do Banco de Dados: Certifique-se de que o MongoDB esteja rodando localmente ou tenha uma conexão remota. Configure as variáveis de ambiente no arquivo .env (exemplo abaixo).
 
 Configuração de Variáveis de Ambiente
 Crie um arquivo .env nas pastas frontend/cadastro e backend/API com as seguintes configurações:
 
-Backend .env (exemplo):
-env
-Copiar código
-DATABASE_URL=mongodb://localhost:27017/nome-do-banco
-JWT_SECRET=sua_chave_secreta
-PORT=5000
-Frontend .env (exemplo):
-env
-Copiar código
-REACT_APP_API_URL=http://localhost:5000
-Executando o Projeto
-Iniciar o Back-end: Navegue até a pasta backend/API e inicie o servidor:
+# Backend .env (exemplo):
+    `
+    DATABASE_URL=mongodb://localhost:27017/nome-do-banco
+    JWT_SECRET=sua_chave_secreta
+    PORT=5000
 
-bash
-Copiar código
-npm start
-O servidor estará disponível em http://localhost:5000.
 
-Iniciar o Front-end: Navegue até a pasta frontend/cadastro e inicie o front-end:
+# Frontend .env (exemplo):
 
-bash
-Copiar código
-npm start
+REACT_APP_API_URL=http://localhost:3000
+
+
+# Executando o Projeto
+ 1-Iniciar o Back-end: Navegue até a pasta backend/API e inicie o servidor:
+    
+    npm start
+
+O servidor estará disponível em http://localhost:3000.
+
+
+ 2-Iniciar o Front-end: Navegue até a pasta frontend/cadastro e inicie o front-end:
+    `npm start`
+
 O front-end estará disponível em http://localhost:3000.
 
-Testar a API com Thunder Client: Use a extensão Thunder Client no VS Code para testar os endpoints da API. Após iniciar o servidor, você pode enviar requisições para http://localhost:5000 e testar funcionalidades como o cadastro e a deleção de usuários.
+ 3-Testar a API com Thunder Client: Use a extensão Thunder Client no VS Code para testar os endpoints da API. Após iniciar o servidor, você pode enviar requisições para http://localhost:3000 e testar funcionalidades como o cadastro e a deleção de usuários.
 
-Funcionalidades
-Cadastro de Usuários: O sistema permite cadastrar novos usuários, armazenando os dados no MongoDB via a API.
-Deleção de Usuários: É possível deletar usuários diretamente na interface, com as alterações refletidas no banco de dados.
-Consumo da API: A aplicação React consome os dados da API para exibir e gerenciar os usuários cadastrados.
-Autenticação (opcional): A API pode incluir autenticação com JWT (se configurado).
-Melhorias Futuras
-Implementar autenticação de usuários (login/logout) usando JWT.
-Adicionar validações de formulário no front-end.
-Melhorar o design da interface com frameworks como Material-UI ou Bootstrap.
-Adicionar testes unitários e de integração.
-Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+## Funcionalidades
+ - Cadastro de Usuários: O sistema permite cadastrar novos usuários, armazenando os dados no MongoDB via a API.
+ - Deleção de Usuários: É possível deletar usuários diretamente na interface, com as alterações refletidas no banco de dados.
+ - Consumo da API: A aplicação React consome os dados da API para exibir e gerenciar os usuários cadastrados.
+ - Autenticação (opcional): A API pode incluir autenticação com JWT (se configurado).
+ - Melhorias Futuras
+ - Implementar autenticação de usuários (login/logout) usando JWT.
+ - Adicionar validações de formulário no front-end.
+ - Melhorar o design da interface com frameworks como Material-UI ou Bootstrap.
+ - Adicionar testes unitários e de integração.
+ - Contribuição
+ - Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-javascript
-Copiar código
 
-Agora seu `README.md` está completo com todas as funcionalidades e detalhes do projeto, incluindo a capacidade de cadastrar e deletar usuários. Você pode copiá-lo diretamente para o seu arquivo.
 
 
 
