@@ -1,0 +1,16 @@
+# Node modules (para frontend e backend)
+# Ignora node_modules nas subpastas frontend/cadastro e backend/API
+/frontend/cadastro/node_modules
+/backend/API/node_modules
+
+# Arquivos de ambiente
+/frontend/cadastro/.env
+/backend/API/.env
+
+# Arquivos de build (para React)
+/frontend/cadastro/build
+
+# Logs e arquivos de debug
+/backend/API/logs
+npm-debug.log*
+yarn-debug.log*
