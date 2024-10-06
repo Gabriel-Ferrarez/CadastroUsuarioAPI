@@ -75,13 +75,13 @@ A estrutura do projeto é organizada em duas partes principais:
     
     `npm start`
 
- O servidor estará disponível em http://localhost:3000.
+   O servidor estará disponível em http://localhost:3000.
 
 
  2. Iniciar o Front-end: Navegue até a pasta frontend/cadastro e inicie o front-end:
     `npm start`
 
-O front-end estará disponível em http://localhost:3000.
+   O front-end estará disponível em http://localhost:3000.
 
 3. Testar a API com Thunder Client: Use a extensão Thunder Client no VS Code para testar os endpoints da API. Após iniciar o servidor, você pode enviar requisições para http://localhost:3000 e testar funcionalidades como o cadastro e a deleção de usuários.
 
