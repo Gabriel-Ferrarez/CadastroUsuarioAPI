@@ -65,17 +65,4 @@ app.delete("/users/:id", async (request, response) => {
 
 app.listen(3000);
 
-/* 
 
-Criar nossa API de Usuários
-
--Criar usuários
--listar todos os usuários 
--Editar um usuário
--Deletar um usuário
-
-
-gabrielferrarez
-PVpqDviaYMfOOSkn
-
-*/
